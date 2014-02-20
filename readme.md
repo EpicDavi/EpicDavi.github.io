@@ -1,5 +1,5 @@
-#My Github Pages
+#My Personal Website (for the time being)
 
-daviskr.com
+http://daviskr.com
 
 ###_EpicDavi_
