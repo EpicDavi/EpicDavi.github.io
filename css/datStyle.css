@@ -1,0 +1,28 @@
+body {
+	background-color: #FF6138;
+	color: #FFFF9D;
+	font-family: "helvetica";
+}
+
+a {
+	text-decoration: none;
+	color: #BEEB9F;
+	background-color: #79BD8F;
+	border-radius: 5px;
+}
+
+a:hover {
+	color:#FF6138;
+}
+
+#title{
+	padding: 1%;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #00A388;
+}
+
+#title h1{
+	font-size: 75px;
+}
+
