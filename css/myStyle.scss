@@ -1,0 +1,43 @@
+$firCol: #56677F;
+$secCol: #5FA3FF;
+$trdCol: #ABCFFF;
+$frtCol: #394A5E;
+$fthCol: #89A5CC;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+	background-color: $firCol;
+	color: $fthCol;
+	font-family: "helvetica";
+}
+
+a {
+	text-decoration: none;
+	color: $fthCol;
+	background-color: $trdCol;
+	@include border-radius(5px);
+
+	&:hover{
+		color:$secCol;
+	}
+}
+
+
+#title{
+	padding: 1%;
+	text-align: center;
+	@include border-radius(20px);
+	background-color: $frtCol;
+
+	h1{
+		font-size: 75px;
+	}
+}
+
