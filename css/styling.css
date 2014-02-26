@@ -58,9 +58,10 @@ a {
   border-radius: 5px;
   background-color: #394a5e; }
   #title h1 {
-    background-color: white;
     font-size: 75px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     -webkit-animation: grlow-text 3s ease infinite alternate;
     -moz-animation: grlow-text 3s ease infinite alternate;
