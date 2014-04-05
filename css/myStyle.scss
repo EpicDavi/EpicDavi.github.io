@@ -1,57 +1,74 @@
 @import "bourbon/bourbon";
 
-$firCol: #56677F;
-$secCol: #5FA3FF;
-$trdCol: #ABCFFF;
-$frtCol: #394A5E;
-$fthCol: #89A5CC;
-
-
-@include keyframes(grlow-text){
-	from{
-		text-shadow: 0 0 0px black;
-	}
-	to{
-		@include transform(scale(1.05));
-		text-shadow: 0 0 10px black;
-	}
-}
-
+$bodyBG: #EAD3A8;
+$primary: #6E6568;
+$secondary: #484043;
+$tertiary: #D23641;
+$textCol: #FFFFFF;
 
 body {
-	background-color: $firCol;
-	color: $fthCol;
-	font-family: "helvetica";
+  background-color: $bodyBG;
+  color: $textCol;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0px 2% 0px 2%;
 }
 
 a {
-	display: inline-block;
-	text-decoration: none;
-	color: $fthCol;
-	background-color: $trdCol;
-	border-radius: 5px;
-	@include transition(transform .5s ease-out);
+  text-decoration: none;
+  color: $textCol;
+  background-color: $tertiary;
+  @include transition(background-color .25s ease-out);
 
-	&:hover{
-		@include transform(scale(1.1));
-		color:$secCol;
-	}
+  &:hover {
+    background-color: $secondary;
+  }
 }
 
+#navy {
+  background-color: $secondary;
+  margin: 0px;
+  padding: 0px;
 
-#title{
-	padding: 1%;
-	text-align: center;
-	border-radius: 5px;
-	background-color: $frtCol;
+  a {
+    background-color: $secondary;
 
-	h1{
-		font-size: 75px;
-		display: block;
-		margin-left:auto;
-		margin-right:auto;
-		width: 50%;
-		@include animation(grlow-text 3s ease infinite alternate);
-	}
+    display: inline-block;
+    padding: 10px;
+
+
+    font-weight: bold;
+    font-size: 16px;
+
+    @include transition(background-color .25s ease-out);
+
+    &:hover {
+      background-color: $tertiary;
+    }
+  }
+
+  #logo {
+    padding: 5px;
+    display: inline-block;
+    background-color: $tertiary;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+  }
+
+}
+
+#title {
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  background-color: $primary;
+
+  h1 {
+    font-size: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
 
