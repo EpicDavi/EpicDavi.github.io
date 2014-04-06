@@ -30,12 +30,14 @@ a {
   margin: 0px;
   padding: 0px;
 
+  box-shadow: 0px 0px 5px $primary;
+
   a {
     background-color: $secondary;
 
     display: inline-block;
     padding: 10px;
-
+    margin: 0px 5px 0px 5px;
 
     font-weight: bold;
     font-size: 16px;
@@ -48,11 +50,18 @@ a {
   }
 
   #logo {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 5px 0px 0px;
     display: inline-block;
     background-color: $tertiary;
     font-family: "Brush Script MT", cursive;
     font-size: 30px;
+
+    @include transition(text-shadow .5s ease-out);
+
+    &:hover {
+      text-shadow: 0px 2px 5px $secondary;
+    }
   }
 
 }
