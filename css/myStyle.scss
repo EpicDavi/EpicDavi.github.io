@@ -42,10 +42,11 @@ a {
     font-weight: bold;
     font-size: 16px;
 
-    @include transition(background-color .25s ease-out);
+    @include transition(background-color .25s ease-out, box-shadow .5s ease-out);
 
     &:hover {
       background-color: $tertiary;
+      box-shadow: 0px -5px 0px $primary inset;
     }
   }
 
@@ -57,7 +58,7 @@ a {
     font-family: "Brush Script MT", cursive;
     font-size: 30px;
 
-    @include transition(text-shadow .5s ease-out);
+    @include transition(text-shadow .5s ease-out, box-shadow .75s ease-out);
 
     &:hover {
       text-shadow: 0px 2px 5px $secondary;
@@ -71,6 +72,8 @@ a {
   padding: 1%;
   text-align: center;
   background-color: $primary;
+
+  box-shadow: 0px 10px 0px -5px $secondary;
 
   h1 {
     font-size: 75px;
