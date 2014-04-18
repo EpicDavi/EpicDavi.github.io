@@ -11,7 +11,11 @@ body {
   color: $textCol;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  margin: 0px 2% 0px 2%;
+  margin: 45px 3% 0px 3%;
+
+  & > *{
+    margin: 10px 1% 10px 1%;
+  }
 }
 
 a {
@@ -30,7 +34,14 @@ a {
   margin: 0px;
   padding: 0px;
 
-  box-shadow: 0px 0px 5px $primary;
+  width: 96%;
+
+  position: fixed;
+
+  top: 0px;
+  left: 2%;
+
+  box-shadow: 0px 10px 0px -5px fade-out(#000000, .75);
 
   a {
     background-color: $secondary;
@@ -46,7 +57,7 @@ a {
 
     &:hover {
       background-color: $tertiary;
-      box-shadow: 0px -5px 0px $primary inset;
+      box-shadow: 0px -5px 0px fade-out(#FFFFFF, .75) inset;
     }
   }
 
@@ -68,7 +79,6 @@ a {
 }
 
 #title {
-  margin: 1%;
   padding: 1%;
   text-align: center;
   background-color: $primary;
@@ -76,6 +86,7 @@ a {
   box-shadow: 0px 10px 0px -5px $secondary;
 
   h1 {
+    text-shadow: 0px 5px 0px fade-out($secondary,.5);
     font-size: 75px;
     display: block;
     margin-left: auto;
