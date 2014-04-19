@@ -13,9 +13,12 @@ body {
   font-size: 15px;
   margin: 45px 3% 0px 3%;
 
+  overflow-x: hidden;
+
   & > *{
     margin: 10px auto 10px auto;
     max-width: 1280px;
+    position: relative;
   }
 }
 
@@ -96,4 +99,25 @@ a {
     margin-right: auto;
     width: 50%;
   }
+}
+
+.page{
+  @extend #title;
+
+  position: absolute;
+
+  left: 150%;
+
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  };
+
+  width: 98%;
+
+  h2{
+    @extend h1;
+    font-size: 50px;
+  }
+
 }
