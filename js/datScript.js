@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $(".page").hide();
     comeFromRight($("#pages .page:first"));
     $(".page").click(function(){
