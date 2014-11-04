@@ -1,24 +1,37 @@
+var finishedLeft = true;
+var finishedRight = true;
+
 $(document).ready(function() {
 
     $(".page").hide();
     comeFromRight($("#pages .page:first"));
     $(".page").click(function(){
-        fadeToLeft($(this));
-        comeFromRight($(this).next());
-        $(this).appendTo("#pages");
+        if(finishedLeft&&finishedRight) {
+            finishedLeft = false;
+            finishedRight = false;
+            fadeToLeft($(this), function () {
+                finishedLeft = true;
+            });
+            comeFromRight($(this).next(), function () {
+                finishedRight = true;
+            });
+            $(this).appendTo("#pages");
+        }
     });
 });
 
 function shiftLeft(){
-    var $pf = $("#pages .page:first");
-    var fa=false, sa=false;
-    fadeToLeft($pf, function(){
-        fa=true;
-    });
-    comeFromRight($pf.next(),function(){
-        ifNoneShow($("#pages"));
-        $pf.appendTo("#pages");
-    });
+    if(finishedLeft&&finishedRight) {
+        finishedLeft = false;
+        finishedRight = false;
+        var $pf = $("#pages .page:first");
+        fadeToLeft($pf, function () {finishedLeft=true;});
+        comeFromRight($pf.next(), function () {
+            ifNoneShow($("#pages"));
+            $pf.appendTo("#pages");
+            finishedRight=true;
+        });
+    }
 }
 
 function ifNoneShow(holder){
