@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/daviskr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://daviskr.com
+  * I am daviskr (https://keybase.io/daviskr) on keybase.
+  * I have a public key with fingerprint EF6F DAA2 9007 734C 7624  7517 672E CCC2 45B6 577E
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "ef6fdaa29007734c76247517672eccc245b6577e",
+            "host": "keybase.io",
+            "key_id": "672eccc245b6577e",
+            "uid": "bf37fe3e4d1a6227ec6a27551077bb00",
+            "username": "daviskr"
+        },
+        "service": {
+            "hostname": "daviskr.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418941646,
+    "expire_in": 157680000,
+    "prev": "ebba05b1c7d08a927bcb0a5d5ca245140094714c745e8c63b34b6ae814c47a02",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.6
+Comment: https://keybase.io/crypto
+
+yMHhAnicbVFbSBRRGB4zM9cM8SVZzWrINJNlZnZmzu4GVl4I6QKWoqGwnjNzVidz
+Zpud3RQxfCiSpIVYEEQlrKjIHioJwUUwCywLQcMHM5LMCxmhRl66wHZG6iHovPyc
+7/++7789T4imLFGZiesL1x7cXo96NbDop4pDxSMNNNLketrVQNfgjeBR1Cqse3VF
+NWgXjT2iR4aQczIMAHZeAiLHA4EFIuCwJEkcLyBRAADT2XS15jMVxAZBH7YpGsHI
+x63IBP0P37+RQB478GA75mUWihwHsCRCDggCS+ohxDAm0Yd1FdZiwpZhQPHV6HRj
+Nk3AgCJhs2Wz8r8Em6TVEqVX1wxN0s6RRLVheF2mzqj3msQLGLn/WLiRospkaiII
+YN2naCrtYglTMhTTk+VZh5NnRV7MpnGdV9GxWzEZAhAdDHlmGRwwd4UQZATESkBm
+HNDJASQhBgqyIEEyN8szjJMHLNkhL2CHJNqRnUcixA4C8QAyHG0OdV7VaBdP2oRV
+xNKnVKnQ8OuYbhwcqNhMRVmoLTGbzLtRlrjEv9c8cig24k8eLR7r3Zk6Bz7Pi5NN
+TdZJNTRTltbVfPhJ68lHu65PuLsj8Oo+pdD6biQmoyjnO7c4X2e1aj+m48vzfx2Y
+nXs4NZ4aHy7PDS10dk2//NgxeKKhvzKvp2Dp9ZTyky79kJ7+uP5g0PhWuiN2PLln
+LXdl2Xfj9LGEoq+LW4PH49KCTc01eyWLbbIkenvv/qQhYah7+C5DPbsSzaylWC7v
+nvjUrmWWrFb2p8+XXqzLuFPWNm679Sbr0khJC6OO8Zk5oTPLU2KkU1W9eeHObX0T
+KR3r78tb9qzOPD2bH2HvFyzdDB79Mqq+bdX94fZwFuorPHXvxWxSBTXcl9KWv/Ib
+f1cYFg==
+=ANs9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/daviskr
+
+==================================================================
