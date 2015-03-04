@@ -1,3 +1,9 @@
+html {
+  font-size: 20px; }
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px; } }
 body {
   font-family: sans-serif;
   margin: 0;
@@ -101,10 +107,10 @@ body {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    -webkit-flex-basis: 150px;
-    -moz-flex-basis: 150px;
-    flex-basis: 150px;
-    -ms-flex-preferred-size: 150px;
+    -webkit-flex-basis: 10em;
+    -moz-flex-basis: 10em;
+    flex-basis: 10em;
+    -ms-flex-preferred-size: 10em;
     background-color: #484043;
     text-decoration: none;
     color: #ffffff;
@@ -117,7 +123,8 @@ header {
 
 footer {
   color: #484043;
-  text-align: right; }
+  text-align: right;
+  margin-top: 1em; }
 
 small {
   opacity: .25; }

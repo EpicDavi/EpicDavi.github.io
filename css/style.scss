@@ -1,5 +1,15 @@
 @import "bourbon/bourbon";
 
+html{
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  html{
+    font-size: 16px;
+  }
+}
+
 body{
   font-family: sans-serif;
   margin: 0;
@@ -44,7 +54,7 @@ body{
 
   >*{
     @include flex(1);
-    @include flex-basis(150px);
+    @include flex-basis(10em);
     background-color: #484043;
     text-decoration: none;
     color: #ffffff;
@@ -64,6 +74,7 @@ header{
 footer{
   color: #484043;
   text-align: right;
+  margin-top: 1em;
 }
 
 small{
