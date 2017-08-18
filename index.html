@@ -33,13 +33,39 @@
                 <a href="/blog/"><h2>Blog</h2></a>
                 <a href="https://github.com/EpicDavi/"><h2>Projects</h2></a>
                 <a href="/files/resume.pdf"><h2>Resume</h2></a>
-                <a href="#"><h2>Contact</h2></a>
-                <a href="#"><h2>Other</h2></a>
+                <a href="#" onclick="clickContact(this);"><h2>Contact</h2></a>
+                <a href="#" onclick="clickOther(this);"><h2>Other</h2></a>
             </div>
         </div>
     </div>
-    <footer><small>Work in progress. &copy; 2015 Davis Robertson</small></footer>
+    <footer><small>&copy; 2017 Davis Robertson</small></footer>
 </div>
-<script src="js/newjs.js"></script>
+<script>
+// 100% effective way to avoid spammers?
+var emailToAvoidSpam = ["", "@", "kr.com"].join("davis");
+var otherClicks = 0;
+function clickContact(elem){
+    elem.childNodes[0].innerHTML = emailToAvoidSpam;
+}
+function clickOther(elem){
+    elem.childNodes[0].innerHTML = [
+         "Try Again",
+         "...",
+         "Click Harder",
+         "Did You Really Think This Would Do Anything?",
+         "Check Out My Resume",
+         "Hire Me",
+         "Help Me",
+         "This Is The End",
+         "Bye",
+         "You Are Going To Break Me",
+         "Goodbye Cruel World!",
+         "undefined",
+         "That's What I Would Say If I Didn't Handle Index Out Of Bounds",
+         "Oh Wait..."
+    ][otherClicks];
+    otherClicks++;
+}
+</script>
 </body>
 </html>
